@@ -1,9 +1,9 @@
 def rearrange(nums):
     if len(nums) <= 10:
         return nums
-    even_nums = [num for num in nums if num % 2 == 0]
-    odd_nums = [num for num in nums if num % 2 != 0]
+    genap = [num for num in nums if num % 2 == 0]
+    ganjil = [num for num in nums if num % 2 != 0]
 
-    return rearrange(even_nums) + rearrange(odd_nums)
+    return rearrange(genap) + rearrange(ganjil)
 
 print (rearrange([3, 6, 8, 5, 4, 1, 4, 6]))
